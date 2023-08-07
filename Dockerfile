@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM ruby:2.5
-RUN apt-get update -qq && apt-get install -y nodejs
+RUN echo "fookin wot m8" && lscpu
 WORKDIR /myapp
 COPY . .
 RUN bundle install
